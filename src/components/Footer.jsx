@@ -1,31 +1,41 @@
-import Boleto from "../assets/images-pay/boleto.png"
-import Hipercard from "../assets/images-pay/hipercard.png"
-import Mastercard from "../assets/images-pay/master_card.png"
-import Visa from "../assets/images-pay/visa.png"
-import "../styles/styles.css"
+import React from 'react';
+import Elo from "../assets/images-pay/Elo_4Cores_Neg.png";
+import Hipercard from "../assets/images-pay/hipercard.png";
+import Mastercard from "../assets/images-pay/master_card.png";
+import Visa from "../assets/images-pay/visa.png";
+import "../styles/styles.css";
 
 const Footer = () => {
   return (
+    <footer>
+      <div className="footer-top">
+        
+
     
-    <div>
-      <div className="footer">
-          <span>Formas de pagamento</span>
-        </div>
+           <h4>Formas de Pagamento</h4>
       <div className="pagamento">
-        <img src={Boleto} />
+   
+
+        <img src={Elo} />
         <img src={Hipercard} />
         <img src={Mastercard} />
-        <img src={Visa} />  
-    </div>
+        <img src={Visa} />
 
-      <div>
-        <span>&copy; 2023</span>
-      </div>  
-         
-        </div>
-        
-  )
-  
+      </div>
+      </div>
+
+
+      {/* Line */}
+      <div className="footer-bottom">
+        <span>
+
+          © Copyright 2023.
+
+
+        </span>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
