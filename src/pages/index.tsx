@@ -2,7 +2,7 @@
 import React from 'react';
 import Product from "../components/Product";
 import styles from "../components/Product.module.css";
-import App from "./App";
+// import App from "./App";
 
 
 const Home: React.FC = () => {
